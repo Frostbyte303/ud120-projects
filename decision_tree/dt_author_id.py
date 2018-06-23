@@ -29,9 +29,11 @@ print "classify training time:", round(time()-t0,3), "s"
 #### your code goes here
 
 acc_min_samples_split_2 = clf2.score(features_test, labels_test)
+print ("num of features:",len(features_train[0]))
 
-def submitAccuracies():
-  return {"acc_min_samples_split_2":round(acc_min_samples_split_2,3)}
+#def submitAccuracies():
+#  return {"acc_min_samples_split_2":round(acc_min_samples_split_2,3)}
+print ('acc_min_samples:', acc_min_samples_split_2)
 
 #########################################################
 
